@@ -1,0 +1,170 @@
+.div-12a-one {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: end;
+height: 60px;
+border-style: solid;
+border-color: gray;
+}
+.div-12a-one-a{
+  background-color: lightblue;
+  width: 200px;
+}
+.div-12a-one-b {
+  background-color: lightpink;
+  width: 75px;
+  height: 43px;
+} 
+.div-12b-one{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  border-color: gray;
+  border-style: solid;
+  justify-content: space-between;
+}
+.div-12b-one-a{
+  background-color: lightblue;
+  width: 50px;
+  height: 40px;
+}
+.div-12b-one-b{
+  background-color: lightpink;
+  flex: 1;
+  height: 140px;
+}
+.div-12b-one-c{
+  background-color: lightblue;
+  width: 50px;
+  height: 40px;
+}
+.div-12d{
+  width:460px;
+  height:100px;
+  border:2px;
+  border-color:gray;
+  border-style:solid;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.div-12d-a{
+  background-color: lightblue;
+  height:50px;
+}
+ .div-12d-b{ background-color:lightgreen;
+  height: 40px;
+ } 
+ .div-12e-a{
+  margin-top: 20px;
+  width:350px;
+  height: 110px;
+  border: 1px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:start;
+
+ }
+ .div-12e-b {
+  margin-right: 29px;
+  margin-top: 9px;
+ }
+ .button{
+  background-color: rgb(103, 103, 244);
+  border: none;
+  padding: 4px 9px 4px 9px;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 10px;
+ }
+ .div-12-a{
+  margin-top: 20px;
+  height: 50px;
+  background-color: rgb(99, 38, 156);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .button-download {
+border-color: white;
+border: 1px;
+border-style:solid;
+border-radius: 4px;
+padding: 5px;
+background-color:  blueviolet;
+color: white;
+margin-right: 12px;
+margin-left: 20px;
+ }
+ .search-input {
+  border-radius: 12px;
+  width: 100%;
+  height: 20px;
+  border: 0;
+  padding: 0;
+ } 
+ .div-input{
+flex: 1;
+ }
+ .div-12f{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: roboto;
+ }
+ .div-12f-one {
+  width: 400px;
+
+ }
+ .profile-img {
+  width:50px;
+  height: 50px;
+  border-radius:50%;
+  margin-bottom: 10px; 
+ }
+ .div-12f-two{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+ }
+ .div-12f-three {
+  margin-left: 8px;
+ }
+ .pra{
+  margin:0;
+  padding: 0;
+  font-weight: 500;
+  font-size: larger;
+ }
+ .little-pra {
+  color: gray;
+  font-size: 17px;
+  margin:0;
+  padding: 0;
+  width:110px;
+ }
+ .follow-button{
+  background-color: rgb(93, 93, 234);
+  border: 0;
+  color: white;
+  padding: 10px 18px 12px 18px;
+  border-radius: 8%;
+  margin-bottom: 42px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: padding 0.15s;
+ }
+ .follow-button:hover {
+  padding: 12px 19px 12px 19px;
+  opacity: 0.80;
+ }
