@@ -1,0 +1,75 @@
+.body{
+  margin-bottom:3000px;
+}
+.div-15b{
+  background-color: gray;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.x-button{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto,arial;
+  font-size: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+.timer{
+  color: white;
+  background-color: black;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+.product-containar{
+  position: relative;
+  display: inline-block;
+}
+.img{
+width: 300px;
+height: 300px;
+object-fit: cover;
+}
+.promotion{
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 6px 12px 6px 12px;
+  top: 20px;
+  right: 0;
+  font-family:roboto;
+}
+.button-overly{
+  position: absolute;
+  background-color: rgba(255, 255,255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.button{
+border-color: black;
+border-style: solid;
+padding: 10px 15px 10px 15px;
+color: black;
+border-radius: 2px;
+cursor: pointer;
+font-family: roboto;
+}
