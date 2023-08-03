@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+<body>
+  <script>
+
+ /*let hour = 14;
+ let names= 'Ruhul';
+  if(hour>= 6 && hour <= 12){
+    console.log(`Good morning ${names}`)
+
+  } else if(hour >=13 && hour <=17){
+    console.log(`Good afternoon ${names}`)
+
+  }else if(hour >=18 && hour <=23){
+    console.log(`Good Evening ${names}`)
+  }else{
+    console.log(`Good Night ${names}`)
+  }*/
+  //the discount app.
+  
+  /*const age=6;
+  const day = 'friday';
+  const holiday=day;
+  if((holiday==='friday' && age<=12) ||age>=60){
+    console.log("Congratulations! You are eligible for a discount.")
+  }else if(holiday!== "friday"){
+    console.log("Without a holiday, you are not eligible for any discount.")
+  }else{
+    console.log('Sorry, you are not eligible for any discount today.')
+  }*/
+  /*let randomNumber = Math.random();
+  
+  const guess='heads';
+  console.log('you guess: '+guess);
+  let result="";
+
+  randomNumber<=0.5 ?result="heads":result='tails'
+  
+  console.log(`your result is: ${result}`);
+
+  guess === result?console.log('congratulations! you are win.'):console.log('so you are loos!.')*/
+  //function practice.
+ /* greet('ruhul');
+  
+  function greet(gratings ='HI',name){
+    if(!name){
+    console.log("your name is undefined please input the name");  
+    }else{
+      console.log(gratings + ' '+name )
+    }
+   
+  }*/
+  //Fahrenheit convert
+  
+  /*function fahrenheit(celsius) {
+    const Fahrenheit = (celsius * 9/5) + 32;
+    return Fahrenheit;
+}
+
+console.log(fahrenheit(32));*/
+//Fahrenheit to celsius.
+/*function celsius(fahrenheit){
+  const celsius = (fahrenheit -32)*5/9;
+  return celsius;
+}
+console.log(celsius(100))
+*/
+//input degree and F/c then convert.
+
+let fahrenheitNote='degree fahrenheit'
+let celsiusNote='degree celsius';
+
+function fahrenheit(celsius) {
+    const Fahrenheit = (celsius * 9/5) + 32;
+    return Fahrenheit;}
+    
+  function celsius(fahrenheit){
+  const celsius = (fahrenheit -32)*5/9;
+  return celsius;}
+
+function weatherConvert(Degree,value){
+  let result;
+    if(value ==='c'){
+      result= fahrenheit(Degree);
+    } else {
+    result= celsius(Degree);
+  }
+
+  function paragraph(value){
+  if(value =='f'){
+   return celsiusNote;
+} else{
+  return fahrenheitNote;
+}
+}
+  let para = paragraph(value);
+  let text =console.log(result +' ' + para);
+  return text;
+}
+console.log(weatherConvert(100,'f'))
+/*function fahrenheit(celsius) {
+  return(celsius * 9/5) + 32;
+}
+
+  function celsius(fahrenheit){
+    return (fahrenheit -32)*5/9;
+ }
+
+  function paragraph(result){
+  if(result ==='f'){
+  return celsiusNote ;
+  } else{
+  return fahrenheitNote;
+}
+}
+function weatherConvert(Degree,value){
+  let result;
+    if(value ==='c'){
+      result= fahrenheit(Degree);
+    } else if(value==='f'){
+    result= celsius(Degree);
+  }else{
+    console.log('input the right value c or f')
+  }
+
+  let para= paragraph(value);
+  let text =console.log(result +' ' + para);
+  return text;
+}
+const fahrenheitNote ='degree fahrenheit'
+const celsiusNote = 'degree celsius';
+console.log(weatherConvert(93,'f'));*/
+
+  </script>
+ 
+</body>
+</html>
