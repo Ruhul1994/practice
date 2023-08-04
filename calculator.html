@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+      <button onclick="
+        calculation += '1';
+        updateLocalStorage()
+        console.log(calculation);
+      ">1</button>
+      
+      <button onclick="
+        calculation += '2';
+        updateLocalStorage()
+        console.log(calculation);
+      ">2</button>
+
+      <button onclick="
+        calculation += '3';
+        updateLocalStorage()
+        console.log(calculation);
+      ">3</button>
+
+      <button onclick="
+        calculation += ' + ';
+        updateLocalStorage()
+        console.log(calculation);
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '4';
+        updateLocalStorage()
+        console.log(calculation);
+      ">4</button>
+      
+      <button onclick="
+        calculation += '5';
+        updateLocalStorage()
+        console.log(calculation);
+      ">5</button>
+
+      <button onclick="
+        calculation += '6';
+        updateLocalStorage()
+        console.log(calculation);
+      ">6</button>
+
+      <button onclick="
+        calculation += ' - ';
+        updateLocalStorage()
+        console.log(calculation);
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '7';
+        updateLocalStorage()
+        console.log(calculation);
+      ">7</button>
+      
+      <button onclick="
+        calculation += '8';
+        updateLocalStorage()
+        console.log(calculation);
+      ">8</button>
+
+      <button onclick="
+        calculation += '9';
+        updateLocalStorage()
+        console.log(calculation);
+      ">9</button>
+
+      <button onclick="
+        calculation += ' * ';
+        updateLocalStorage()
+        console.log(calculation);
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '0';
+        updateLocalStorage()
+        console.log(calculation);
+      ">0</button>
+      
+      <button onclick="
+        calculation += '.';
+        updateLocalStorage()
+        console.log(calculation);
+      ">.</button>
+
+      <button onclick="
+        calculation = eval(calculation);
+        updateLocalStorage()
+        console.log(calculation);
+      ">=</button>
+
+      <button onclick="
+        calculation += ' / ';
+        updateLocalStorage()
+        console.log(calculation);
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        localStorage.removeItem('calculationData')
+        console.log(calculation);
+      ">Clear</button>
+    </p>
+   
+    <script>
+      let calculation = localStorage.getItem('calculationData')|| '';
+      
+      function updateLocalStorage(){
+        localStorage.setItem('calculationData',calculation);
+      }
+     
+    </script>
+  </body>
+</html>
