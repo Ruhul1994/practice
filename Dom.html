@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+<button onclick="
+ const documentElement = document.querySelector('button');
+  if(documentElement.innerText=== 'do it'){
+    documentElement.innerText='done';
+  }else{
+    documentElement.innerText= 'do it';
+  }
+    ">do it</button>
+    <button style="cursor: pointer;"
+    onclick="
+    document.querySelector('.js-paragraph')
+    .innerHTML= `you chose:Head.`
+    "
+    >Heads</button><button style="cursor: pointer;"
+    onclick="
+    document.querySelector('.js-paragraph')
+    .innerHTML= `you chose: tails.`
+    ">tails</button>
+    <p class="js-paragraph"></p>-->
+    <!--practice 9d
+    1) input the name.
+    2) submit and show input value in a p tag.
+    -->
+<div>
+  <input style="padding: 6px; margin: 5px;" class="js-input-name"
+  onkeydown =" handelkeydown(event)" type="text" placeholder="Input the name">
+
+<button onclick="
+displayText ();
+" type="submit">submit</button>
+<p class="js-paragraph-name"></p>
+</div>
+
+</body>
+  <script>
+function displayText (){
+const inputField= document.querySelector('.js-input-name');
+const text= inputField.value;
+const name= document.querySelector('.js-paragraph-name').innerHTML=`Your name is: ${text}`;
+return name;
+}
+function handelkeydown(event){
+if (event.key==='Enter'){
+  displayText ();
+}
+} 
+  </script>
+</body>
+</html>
