@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object</title>
+</head>
+<body>
+  <script>
+ const basketball = {
+  name : 'basketball',
+  price : 2095/100,
+  ['delivery-time']:'3 days.'
+ } 
+ const product2= {
+  name : 'basketballIndian',
+  price : 2098/100,
+  ['delivery-time']:'3 days.'
+ } 
+ const product1 = {
+  name : 'basketballChina',
+  price : 3095/100,
+  ['delivery-time']:'3 days.'
+ } 
+ function comparePrice(product1,product2){
+  if(product1.price>product2.price){
+    console.log(`${product2.name} is less expensive.`)
+  }else{
+    console.log(`${product1.name} is less expensive.`)
+  }
+ }
+ comparePrice(
+ product1, product2
+
+ )
+ basketball.price = (2095 + 500)/100
+ console.log(basketball);
+ const greeting ='Good-MoRning';
+ console.log(greeting.toLowerCase())
+ let test ='you ';
+ console.log(test.repeat(12))
+  </script>
+</body>
+</html>
