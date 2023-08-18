@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toss game</title>
+</head>
+<body>
+  <button style="padding: 6px; cursor: pointer;" onclick="
+    playGame('head')
+    ">head</button>
+  <button style="padding:6px;cursor: pointer;" onclick="
+  playGame('tail')
+  ">tail</button>
+  <button onclick="resetScoreBoard();">Reset</button>
+  <script>
+    const guess='';
+
+  let result;
+  const ScoreBoard = getScoreBoard();
+  function getScoreBoard(){
+    const storeResult= localStorage.getItem('score-board');
+    return storeResult ? JSON.parse(storeResult) : {win:0, loss:0 }; 
+  }
+
+
+  function generateRandomNumber(){
+    const randomNumber = Math.random();
+    return randomNumber<=0.5 ?'head':'tail';
+  }
+  
+  
+
+  function playGame(guess){
+    result= generateRandomNumber();
+  if(guess===result) {
+    ScoreBoard.win++;
+    alert(`You guessed: ${guess}. You won!\nScoreboard: ${JSON.stringify(ScoreBoard)}`);
+  }else{
+    ScoreBoard.loss++
+    alert(`You guessed: ${guess}. You lost!\nScoreboard: ${JSON.stringify(ScoreBoard)}`);
+  }
+  localStorage.setItem('score-board',JSON.stringify(ScoreBoard));
+  }
+  function resetScoreBoard(){
+    ScoreBoard.win='0'
+    ScoreBoard.loss='0'
+    localStorage.removeItem('score-board');
+  }
+ 
+  
+  </script>
+</body>
+</html>
