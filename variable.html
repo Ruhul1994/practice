@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>variable-practice</title>
+  <style>
+    button{
+      background-color:rgb(88, 88, 227);
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      margin: 2px;
+      cursor: pointer;
+    }
+    button:active{
+      background-color: rgb(143, 8, 8);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button onclick="
+    console.log(`total quantity now: ${Quantity}`);
+      ">
+      Show Quantity
+    </button>
+    <button onclick="
+    Quantity++;
+    console.log(`total quantity now: ${Quantity}`);
+      ">
+      Add cart
+    </button>
+    <button
+    onclick="
+    Quantity+=2;
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+    +2
+    </button>
+    <button onclick="
+    Quantity+=3
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+      +3
+    </button>
+    <button onclick="
+    Quantity--;
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+    Remove Cart
+    </button>
+    <button onclick="
+    Quantity-=2;
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+      -2
+    </button>
+    <button onclick="
+    Quantity-=3
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+      -3
+    </button>
+    <button onclick="
+    Quantity=0;
+    console.log(`total quantity now: ${Quantity}`);
+    ">
+      Reset Quantity
+    </button>
+  </div>
+  <script>
+    let Quantity=0;
+  </script>
+</body>
+</html>
